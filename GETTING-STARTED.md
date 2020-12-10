@@ -18,7 +18,7 @@ To build the sample application:
 9. Tap Done.
 
 ## See Also
-[Bluetooth Stylus Framework - Reference](https://developer-docs.wacom.com/bluetooth-stylus/docs/bsf-reference) - Complete API details
+[Bluetooth Stylus Framework - Reference](https://developer-docs.wacom.com/mobile-stylus/docs/bsf-reference) - Complete API details
 
 ## Where to get help
 If you have questions about the sample application or the setup process, please visit our Support page at: https://developer.wacom.com/developer-dashboard/support 
