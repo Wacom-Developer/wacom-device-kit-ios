@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		140672BD17AAD13A008B288D /* WacomDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140672BC17AAD13A008B288D /* WacomDevice.framework */; };
 		142AE30D16F1170100A20FC9 /* DiscoveryPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142AE30C16F1170100A20FC9 /* DiscoveryPopoverViewController.m */; };
 		142AE4BE16F13B5400A20FC9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142AE4BD16F13B5400A20FC9 /* CoreBluetooth.framework */; };
 		14362ADB16FB6EC10003CFD3 /* touch.png in Resources */ = {isa = PBXBuildFile; fileRef = 14362ADA16FB6EC10003CFD3 /* touch.png */; };
@@ -37,8 +36,24 @@
 		49F19E2B1ADC2F23005FCD2E /* HandPositionRightUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F19E251ADC2F23005FCD2E /* HandPositionRightUp.png */; };
 		AD49E0291A317654004C14E8 /* WacomStylusFrameworkResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD49E0281A317654004C14E8 /* WacomStylusFrameworkResources.bundle */; };
 		C715F4D21A17017800918C70 /* HandPositionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C715F4D11A17017800918C70 /* HandPositionTableViewController.m */; };
+		D1FB3CCB26263D940022C124 /* WacomDevice.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D02AC9261D215500A77CCE /* WacomDevice.xcframework */; };
+		D1FB3CCC26263D940022C124 /* WacomDevice.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1D02AC9261D215500A77CCE /* WacomDevice.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DB524E221B6199C2000B2C00 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB524E211B6199C2000B2C00 /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1FB3CCD26263D940022C124 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1FB3CCC26263D940022C124 /* WacomDevice.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		140672BC17AAD13A008B288D /* WacomDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WacomDevice.framework; path = ../SDK/WacomDevice.framework; sourceTree = "<group>"; };
@@ -79,6 +94,7 @@
 		AD49E0281A317654004C14E8 /* WacomStylusFrameworkResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = WacomStylusFrameworkResources.bundle; path = ../../SDK/WacomStylusFrameworkResources.bundle; sourceTree = "<group>"; };
 		C715F4D01A17017800918C70 /* HandPositionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandPositionTableViewController.h; sourceTree = "<group>"; };
 		C715F4D11A17017800918C70 /* HandPositionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandPositionTableViewController.m; sourceTree = "<group>"; };
+		D1D02AC9261D215500A77CCE /* WacomDevice.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WacomDevice.xcframework; path = ../SDK/WacomDevice.xcframework; sourceTree = "<group>"; };
 		DB524E211B6199C2000B2C00 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		F00E70D11A31D2D000FBEF87 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		F00E70D21A31D2D000FBEF87 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -116,9 +132,9 @@
 				1498079816EFAC4900B9B79F /* CoreGraphics.framework in Frameworks */,
 				149807BA16EFB21E00B9B79F /* GLKit.framework in Frameworks */,
 				149807BD16EFBFF100B9B79F /* QuartzCore.framework in Frameworks */,
+				D1FB3CCB26263D940022C124 /* WacomDevice.xcframework in Frameworks */,
 				149807C416EFC4A500B9B79F /* OpenGLES.framework in Frameworks */,
 				142AE4BE16F13B5400A20FC9 /* CoreBluetooth.framework in Frameworks */,
-				140672BD17AAD13A008B288D /* WacomDevice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +162,7 @@
 		1498079216EFAC4900B9B79F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1D02AC9261D215500A77CCE /* WacomDevice.xcframework */,
 				140672BC17AAD13A008B288D /* WacomDevice.framework */,
 				142AE4BD16F13B5400A20FC9 /* CoreBluetooth.framework */,
 				149807C316EFC4A500B9B79F /* OpenGLES.framework */,
@@ -212,6 +229,7 @@
 				1498078C16EFAC4900B9B79F /* Sources */,
 				1498078D16EFAC4900B9B79F /* Frameworks */,
 				1498078E16EFAC4900B9B79F /* Resources */,
+				D1FB3CCD26263D940022C124 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,10 +255,11 @@
 				};
 			};
 			buildConfigurationList = 1498078B16EFAC4900B9B79F /* Build configuration list for PBXProject "WacomStylusDemoApp" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				de,
 				fr,
@@ -424,12 +443,18 @@
 				GCC_PREFIX_HEADER = "WacomStylusDemoApp/WacomStylusDemoApp-Prefix.pch";
 				INFOPLIST_FILE = "WacomStylusDemoApp/WacomStylusDemoApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../SDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = "";
+				WATCHOS_DEPLOYMENT_TARGET = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -446,12 +471,18 @@
 				GCC_PREFIX_HEADER = "WacomStylusDemoApp/WacomStylusDemoApp-Prefix.pch";
 				INFOPLIST_FILE = "WacomStylusDemoApp/WacomStylusDemoApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../SDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = "";
+				WATCHOS_DEPLOYMENT_TARGET = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

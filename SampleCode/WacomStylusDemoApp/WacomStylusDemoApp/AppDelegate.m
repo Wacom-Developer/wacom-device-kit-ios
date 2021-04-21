@@ -10,7 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #import "AppDelegate.h"
-#import <WacomDevice/WacomDeviceFramework.h>
+#import "WacomDevice/WacomDeviceFramework.h"
 @implementation AppDelegate
 
 
