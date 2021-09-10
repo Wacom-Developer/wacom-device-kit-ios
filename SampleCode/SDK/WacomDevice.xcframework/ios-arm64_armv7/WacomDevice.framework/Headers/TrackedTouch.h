@@ -6,7 +6,7 @@
 
  Abstract: Act as a container and manager for UITouches and perform touch rejection
 
- Version: 2.2.6
+ Version: 2.2.7
 
  COPYRIGHT
  Copyright WACOM Technology, Inc. 2012-2019
