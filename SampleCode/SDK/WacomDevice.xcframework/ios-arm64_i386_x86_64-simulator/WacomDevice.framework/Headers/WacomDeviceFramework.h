@@ -6,7 +6,7 @@
 
  Abstract: Handle device connection and Wacom services
 
- Version: 2.2.6
+ Version: 2.2.7
  
  COPYRIGHT
  Copyright WACOM Technology, Inc. 2012-2019
